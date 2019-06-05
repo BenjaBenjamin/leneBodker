@@ -1,0 +1,1462 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+.logo {
+    height: 4vw;
+    width: 10vw;
+    position: fixed;
+    z-index: 4;
+    padding: 8px;
+}
+
+section_single {
+    height: 100vw;
+    width: 100vw;
+    background-color: black;
+}
+
+/*NEWSLETTER*/
+form {
+    margin-top: 2vw;
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+}
+
+.container {
+    width: 50%;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+input[type=text],
+input[type=submit] {
+    width: 40%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 30vw;
+}
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+input[type=submit] {
+    background-color: #294a99;
+    color: white;
+    border: none;
+    margin-top:
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+/*POPUP*/
+.pop {
+    background-color: #FF7BAC;
+    width: 50vw;
+    height: 65vh;
+    border: #A7E3F5 solid 10px;
+    border-radius: 25px;
+    margin-left: 23vw;
+
+}
+
+.pop h2 {
+    font-size: 2rem;
+    border: none;
+}
+
+.pop p {
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+#popup {
+    position: fixed;
+    text-align: center;
+    z-index: 100;
+    bottom: 2vw;
+}
+
+#luk button {
+    width: 2vw;
+    height: 2vw;
+    margin-left: 23vw;
+    color: #A7E3F5;
+    background-color: #FF7BAC;
+    margin-bottom: 1vw;
+
+}
+
+.overskrift h1 {}
+
+.Sirv {
+    border: solid;
+}
+
+.Sirv img {
+    height: 40vw;
+}
+
+section_syv h1 {
+    text-align: center;
+
+    background-color: #e9e5e2;
+    width: 100vw;
+    padding-top: 15vw;
+}
+
+
+section_syv p {
+
+    background-color: #e9e5e2;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 35vw;
+    padding-top: 5vw;
+}
+
+section_syv {
+    margin: auto;
+}
+
+section_otte h1 {
+    text-align: center;
+    background-color: #DBDBDB;
+    width: 100vw;
+    padding-top: 5vw;
+}
+
+
+section_otte p {
+
+    background-color: #DBDBDB;
+    padding: 20px;
+    height: 70vh;
+    width: 100vw;
+    padding-left: 35vw;
+    padding-top: 5vw;
+}
+
+section_otte {
+    margin: auto;
+}
+
+section_elleve h1 {
+    text-align: center;
+    background-color: #b9b5b2;
+    width: 100vw;
+    padding-top: 5vw;
+}
+
+
+section_elleve p {
+
+    background-color: #b9b5b2;
+    padding: 20px;
+    height: 70vh;
+    width: 100vw;
+    padding-left: 35vw;
+    padding-top: 5vw;
+}
+
+section_elleve {
+    margin: auto;
+}
+
+section_tolv h1 {
+    color: white;
+    text-align: center;
+    background-color: #6c6961;
+    width: 100vw;
+    padding-top: 5vw;
+}
+
+
+section_tolv p {
+    color: white;
+    background-color: #6c6961;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 35vw;
+    padding-top: 5vw;
+}
+
+section_tolv {
+    margin: auto;
+}
+
+section_tretten h1 {
+    color: white;
+    text-align: center;
+    background-color: #4c4843;
+    width: 100vw;
+    padding-top: 5vw;
+}
+
+
+section_tretten p {
+    color: white;
+    background-color: #4c4843;
+    padding: 20px;
+    height: 115vh;
+    width: 100vw;
+    padding-left: 35vw;
+    padding-top: 5vw;
+}
+
+section_tretten {
+    margin: auto;
+}
+
+section_fjorten h1 {
+    color: white;
+    text-align: center;
+    background-color: #76736f;
+    width: 100vw;
+    padding-top: 5vw;
+}
+
+
+section_fjorten p {
+    color: white;
+    background-color: #76736f;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 35vw;
+    padding-top: 5vw;
+}
+
+section_fjorten {
+    margin: auto;
+}
+
+
+
+
+
+.billede img {
+    width: 80%;
+    margin: auto;
+    padding-top: 5vw;
+}
+
+.værksted {
+    margin-left: 5vw;
+}
+
+.billede4 {
+    flex-basis: 700px;
+    margin-top: 15vw;
+    margin-right: 5vw;
+}
+
+.billede5 {
+    width: 100%;
+    flex-basis: 700px;
+    margin-top: 15vw;
+    text-align: center;
+}
+
+.billede5 img {}
+
+.videogalleri {
+    margin-top: 15vw;
+    width: 100%;
+
+}
+
+h4 {
+    padding-top: 10vw;
+    padding-left: 5vw;
+    z-index: 10;
+    font-size: 2rem;
+}
+
+
+.indhold {
+    padding-top: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.indhold img {
+    width: 100%;
+    padding: 5vw;
+
+}
+
+.ting {
+    border-right: solid;
+    margin-top: 3vw;
+}
+
+.ting p {
+    font-family: "BebasNeue-Light", normal, serif;
+    font-weight: 10;
+    letter-spacing: 10px;
+}
+
+.indhold img:hover {
+    opacity: 0.8;
+}
+
+.indhold p {
+    font-size: 1.5rem;
+    position: relative;
+    right: 7vw;
+}
+
+.indhold h1 {
+    font-size: 2rem;
+}
+
+.indhold:hover h1 {
+    visibility: visible;
+}
+
+.indhold:hover p {
+    visibility: visible;
+}
+
+.grid-item {
+    z-index: 100;
+    font-size: 4rem;
+}
+
+#hero {
+    color: white;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#my_video {
+    right: 0;
+    width: 100%;
+}
+
+#video {
+    margin: 50px auto 75px;
+    height: 400px;
+    max-width: 1200px;
+    display: grid;
+
+}
+
+#video video {
+    margin: 0 auto;
+    max-width: 96vw;
+    width: 100%
+}
+
+.titel {
+    position: absolute;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.56);
+    height: 102%;
+    width: 100%;
+    justify-content: ;
+    align-items: center;
+}
+
+.titel h2 {
+    margin-top: 25vw;
+    margin-left: 5vw;
+    font-size: 3rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 15vw;
+}
+
+footer p {
+    margin-bottom: 7vw;
+}
+
+.somecon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.some {
+    display: flex;
+}
+
+.some img {
+    height: 20vh;
+    width: 25vw;
+    padding-bottom: 5vw;
+}
+
+.some img:hover {
+    opacity: 0.5;
+}
+
+
+section_to {
+    background-color: #f0f0f0;
+    height: 110vh;
+}
+
+section_ni {
+    height: 80vh;
+
+}
+
+.container {
+    width: 100%;
+    height: 20vh;
+}
+
+
+
+section_to img {
+    height: 60vh;
+    border-radius: 50%;
+    display: flex;
+
+}
+
+
+
+section_fire {
+    height: 100vh;
+    width: 100%;
+    background-color: ;
+    padding: 5px;
+}
+
+section_fire img {
+    height: 60vh;
+    display: flex;
+
+}
+
+section_ti {
+    height: 150vh;
+    width: 100%;
+    background-color: ;
+    padding: 5px;
+}
+
+section_ti img {
+    display: flex;
+}
+
+.billede1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 600;
+    padding-top: 15vw;
+    padding-left: 10vw;
+}
+
+.billede3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 600;
+    padding-top: 15vw;
+    padding-right: 10vw;
+}
+
+.billede6 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100;
+    padding-top: 15vw;
+    padding-left: 10vw;
+}
+
+.billede6 img {
+    width: 100%;
+    height: 100%;
+}
+
+.billede2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 600;
+    padding-top: 15vw;
+    padding-left: 10vw;
+    width: 100vw;
+    padding-right: 10vw;
+    padding-left: 3vw;
+}
+
+section_to h1 {
+    margin-top: 10vw;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.sektion5 h1 {
+    margin-top: 10vw;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+
+section_to h3 {}
+
+
+section_to p {
+
+    margin-top: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-basis: 500;
+    padding-right: 10vw;
+    padding-left: 3vw;
+}
+
+section_fire h1 {
+    margin-top: 10vw;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    margin-left: 8vw;
+}
+
+section_ti p {
+
+    margin-top: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-basis: 500;
+    padding-right: 10vw;
+    padding-left: 3vw;
+}
+
+section_ti h1 {
+    margin-top: 10vw;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    margin-left: 8vw;
+}
+
+section_fire p {
+
+    margin-top: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-basis: 500;
+    padding-right: 10vw;
+    padding-left: 3vw;
+}
+
+
+section_tre {
+    background-color: #DBDBDB;
+    height: 110vh;
+    /*
+    height: 110vh;
+    width: 100%;
+    background-color: #DBDBDB;
+    padding: 5px;
+*/
+}
+
+section_ti {
+    height: 200vh;
+    width: 100%;
+    padding: 5px;
+}
+
+section_tre img {
+    height: 60vh;
+    border-radius: 50%;
+    display: flex;
+
+}
+
+section_tre h1 {
+    margin-top: 10vw;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+section_tre p {
+    display: none;
+    margin-top: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-basis: 300;
+    padding-left: 10vw;
+    padding-right: 3vw;
+}
+
+
+
+
+a,
+p {
+    font-family: "Shree Devanagari 714", italic, serif;
+}
+
+h1 {
+    font-family: "BebasNeue-Regular", normal, serif;
+    font-weight: 10;
+    letter-spacing: 10px;
+}
+
+h3 {
+    font-family: "BebasNeue-Regular", normal, serif;
+    font-weight: 10;
+    letter-spacing: 10px;
+}
+
+h4 {
+    font-family: "BebasNeue-Regular", normal, serif;
+    font-weight: 10;
+    letter-spacing: 10px;
+}
+
+h2 {
+    font-family: "BebasNeue-Regular", normal, serif;
+    font-weight: 10;
+    letter-spacing: 10px;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #e9e5e2;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #e9e5e2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #e9e5e2;
+    padding-left: 8px;
+}
+
+
+
+.dropdown-btn {
+    text-decoration: none;
+    font-size: 18.5px;
+    color: black;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    padding: 15px;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+    color: #e9e5e2;
+}
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    left: 0;
+    background-color: white;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    /* Place content 60px from the top */
+    /*    transition: 0.5s;*/
+    visibility: hidden;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    text-decoration: underline;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    right: 5px;
+    font-size: 60px;
+    margin-top: -4vh;
+}
+
+
+.openbtn {
+    /*    position: fixed;*/
+    right: 1vw;
+    font-size: 50px;
+    cursor: pointer;
+    margin-right: 2vw;
+    border-radius: 2vw;
+    position: fixed;
+    visibility: hidden;
+    /*    display: none;*/
+    z-index: 1;
+    margin-top: -9vh;
+
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    margin-top: -0.4vw;
+    /*    border-top: solid #225b76;*/
+    align-items: stretch;
+    background-color: white;
+    width: 100%;
+    /*    position: relative;*/
+
+    /*    margin: 1rem 2rem;*/
+    /*    display: none;*/
+
+}
+
+.active {
+    background-color: #e9e5e2;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #e9e5e2;
+}
+
+nav li {
+    display: inline-block;
+    padding: 5px 5px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: auto;
+    overflow: hidden;
+    width: 80vw;
+    margin-right: 10vw;
+
+
+}
+
+
+nav ul li {
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+nav ul li:last-child {
+    padding-right: 0px;
+    border-right: none;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.rem;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    background-color: #e9e5e2;
+    transition: all 0.5s ease 0s;
+}
+
+
+@media only screen and (max-width: 1170px) {
+    section {
+        visibility: visible;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+
+
+    .openbtn {
+        position: fixed;
+        bottom: 15vw;
+        /*        display: block;*/
+        visibility: visible;
+        display: none;
+
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+
+    section_to {
+        display: flex;
+    }
+
+    section_tre {
+        display: flex;
+    }
+
+    section_fire {
+        display: flex;
+    }
+
+    section_ti {
+        display: flex;
+    }
+
+    footer p {
+        text-align: left;
+        margin-left: 5vw;
+        margin-top: 6vw;
+
+    }
+
+    footer {
+        margin-top: 0;
+        display: flex;
+    }
+
+    footer h1 {
+        position: absolute;
+        text-align: left;
+        margin-left: 5vw;
+        margin-top: 2vw;
+
+    }
+
+    .somecon {
+        margin-top: 7vw;
+        margin-left: 40vw;
+    }
+
+    .some img {
+        height: 12vw;
+        width: 8vw;
+        margin-left: 3vw;
+    }
+}
+
+
+/*Større skærm*/
+@media screen and (max-width: 1400px) {
+    .titel {
+        width: 100%;
+        height: 56.5vw;
+    }
+
+    .titel h2 {
+        font-size: 2.5rem;
+        width: 80%;
+        margin-left: 4vw;
+    }
+
+
+}
+
+@media screen and (max-width: 1100px) {
+
+    .indhold {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/*Tablet*/
+@media screen and (max-width: 800px) {
+
+    .logo {
+        width: 30vw;
+        height: 8vw;
+    }
+
+    .billede6 {
+        padding: 0;
+    }
+
+    .billede6 img {
+        padding: 25px;
+    }
+
+    section_syv p {
+        text-align: center;
+        padding: 0;
+        padding-top: 5vw;
+        height: 100vw;
+    }
+
+    section_otte p {
+        text-align: center;
+        padding: 0;
+        padding-top: 5vw;
+        height: 70vw;
+    }
+
+    section_elleve p {
+        text-align: center;
+        padding: 0;
+        padding-top: 5vw;
+        height: 70vw;
+    }
+
+    section_tolv p {
+        text-align: center;
+        padding: 0;
+        padding-top: 5vw;
+        height: 100vw;
+    }
+
+    section_tretten p {
+        text-align: center;
+        padding: 0;
+        padding-top: 5vw;
+        height: 105vw;
+    }
+
+    section_fjorten p {
+        text-align: center;
+        padding: 0;
+        padding-top: 5vw;
+    }
+
+    .videogalleri {
+        padding-top: 15vw;
+        margin-top: 15vw;
+        width: 100%;
+
+    }
+
+    .billede {
+        width: 100%;
+    }
+
+    .billede4 {
+        margin: auto;
+        padding-top: 5vw;
+    }
+
+    .billede5 {
+        margin: auto;
+        padding-bottom: 10vw;
+        padding-top: 15vw;
+    }
+
+    .ting:nth-child(2) {
+        border: none;
+    }
+
+    .ting:nth-child(4) {
+        border: none;
+    }
+
+    .ting:nth-child(6) {
+        border: none;
+    }
+
+    .ting:nth-child(8) {
+        border: none;
+    }
+
+
+    section_ni p {
+        width: 100%;
+        height: 100vh;
+        background-color: #DBDBDB;
+    }
+
+    section_ni h1 {
+        background-color: #DBDBDB;
+        margin-top: 0;
+    }
+
+
+
+    section_to {
+        height: 130vh;
+    }
+
+    section_to h1 {}
+
+    section_fire {
+        height: 250vh;
+    }
+
+    section_ti {
+        height: 250vh;
+    }
+
+    section_tre {
+        height: 130vh;
+    }
+
+    #my_video {
+        width: 100%;
+        height: 80vw;
+    }
+
+    #hero {
+        height: 80vw;
+    }
+
+    .titel {
+        width: 100%;
+        height: 68vw;
+    }
+
+    .titel h2 {
+        font-size: 2.5rem;
+        width: 80%;
+        margin-left: 4vw;
+    }
+
+    .openbtn {
+        position: fixed;
+        top: 25vw;
+        right: 5vw;
+        /*        display: block;*/
+        visibility: visible;
+        /*        background-color: white;*/
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+        text-align: center;
+
+    }
+
+    .sidenav {
+        visibility: visible;
+        z-index: 2;
+    }
+
+    .sidenav a {
+        font-size: 25px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .dropdown-btn {
+        font-size: 25px;
+    }
+
+    section_to img {
+        margin-top: 15vw;
+    }
+
+    section_fire img {
+        margin-top: 15vw;
+    }
+
+    section_ti img {
+        margin-top: 15vw;
+    }
+
+    .billede1 img {}
+
+    .billede2 {
+        padding: 0;
+        padding-top: 20vw;
+        width: 100%;
+    }
+
+    .snapwidget-widget {}
+
+    .overskrift h1 {
+        padding-top: 5vw;
+        width: 100vw;
+        text-align: center;
+    }
+
+    section_to h1 {
+        margin: auto;
+    }
+
+    section_to p {
+        padding: 0;
+        padding-right: 5vw;
+        padding-left: 5vw;
+
+    }
+
+    section_fire p {
+        padding: 0;
+        padding-right: 5vw;
+        padding-left: 5vw;
+
+    }
+
+    section_ti h1 {
+        margin: auto;
+    }
+
+    section_fire h1 {
+        margin: auto;
+    }
+
+    section_ti p {
+        padding: 0;
+        padding-right: 5vw;
+        padding-left: 5vw;
+
+    }
+
+    section_tre img {
+        margin-top: 15vw;
+    }
+
+    section_tre h1 {
+        margin: auto;
+    }
+
+    section_tre p {
+        padding: 0;
+        padding-right: 5vw;
+        padding-left: 5vw;
+
+    }
+
+    .some img {
+        margin-left: 7vw;
+    }
+
+    .Sirv img {
+        height: 80vw;
+    }
+
+}
+
+/*Mobil*/
+@media screen and (max-width: 500px) {
+
+    .billede6 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .billede6 img {
+        width: 100%;
+    }
+
+    .logo {
+        width: 40vw;
+        height: 10vw;
+    }
+
+    section_syv p {
+        text-align: center;
+        padding: 0;
+        padding-top: 5vw;
+        height: 290vw;
+    }
+
+    section_otte p {
+        text-align: center;
+        padding: 0;
+        padding-top: 5vw;
+        height: 130vw;
+    }
+
+    section_elleve p {
+        text-align: center;
+        padding: 0;
+        padding-top: 5vw;
+        height: 170vw;
+    }
+
+    section_tolv p {
+        text-align: center;
+        padding: 0;
+        padding-top: 5vw;
+        height: 220vw;
+    }
+
+    section_tretten p {
+        text-align: center;
+        padding: 0;
+        padding-top: 5vw;
+        height: 260vw;
+    }
+
+    section_fjorten p {
+        text-align: center;
+        padding: 0;
+        padding-top: 5vw;
+        height: 220vw;
+    }
+
+    .Sirv img {
+        height: 80vw;
+    }
+
+
+    .ting {
+        border: none;
+    }
+
+
+    section_ni p {
+        height: 110vh;
+    }
+
+    .some img {
+        margin-left: 7vw;
+    }
+
+    .billede4 {
+        width: 100%;
+    }
+
+    .mobil {
+        height: 100vw;
+    }
+
+    .indhold {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #my_video {
+        width: 100%;
+        height: 60vw;
+    }
+
+    #hero {
+        height: 60vw;
+    }
+
+    .titel {
+        width: 100%;
+        height: 58vw;
+    }
+
+    .titel h2 {
+        font-size: 1.5rem;
+        width: 80%;
+        margin-left: 2vw;
+    }
+
+    section_to {
+        text-align: center;
+        flex: none;
+        height: 220vw;
+        width: 100%;
+    }
+
+
+
+    section_to img {
+        margin-top: 15vw;
+    }
+
+    section_fire {
+        text-align: center;
+        flex: none;
+        height: 300vw;
+        width: 100%;
+    }
+
+
+
+    section_fire img {
+        margin-top: 15vw;
+    }
+
+    .billede1 img {
+        width: 100%;
+    }
+
+    .billede1 {
+        margin-top: 5vw;
+        padding: 0;
+        padding-top: 15vw;
+    }
+
+    .billede2 {
+        padding: 0;
+        padding-top: 20vw;
+        width: 100%;
+    }
+
+    .snapwidget-widget {}
+
+    .overskrift h1 {
+        right: 30vw;
+        top: 10vw;
+    }
+
+    .overskrift1 h1 {
+        top: 10vw;
+        left: 2vw;
+    }
+
+    section_to h1 {
+        margin: auto;
+    }
+
+    section_to {
+        height: 170vh;
+    }
+
+    section_to p {
+        padding: 0;
+        padding-right: 5vw;
+        padding-left: 5vw;
+
+    }
+
+    section_fire h1 {
+        padding-top: 8vw;
+        margin-left: 5vw;
+    }
+
+
+    section_fire p {
+        padding: 0;
+        padding-right: 5vw;
+        padding-left: 5vw;
+
+    }
+
+    section_tre {
+        text-align: center;
+        flex: none;
+        height: 250vw;
+        margin-top:
+    }
+
+    section_tre img {
+        margin-top: 15vw;
+    }
+
+    section_tre h1 {}
+
+    section_tre p {
+        padding: 0;
+        padding-right: 5vw;
+        padding-left: 5vw;
+
+    }
+
+    .panorama {
+        height: 20vw;
+        width: 20vw;
+    }
+
+    .openbtn {
+        position: fixed;
+        top: 25vw;
+        right: 5vw;
+        /*        display: block;*/
+        visibility: visible;
+        /*        background-color: white;*/
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .sidenav {
+        visibility: visible;
+        z-index: 2;
+    }
+
+    .sidenav a {
+        font-size: 25px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .dropdown-btn {
+        font-size: 25px;
+    }
+}

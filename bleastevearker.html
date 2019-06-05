@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lene Bødker</title>
+    <script src="https://scripts.sirv.com/sirv.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<header>
+    <img src="logo-lene.svg" alt="logo" class="logo">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" class="active">Forside</a>
+
+        <button class="dropdown-btn">Værker ↓
+            <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="dropdown-container">
+            <a href="vearker.html">Alle værker</a>
+            <a href="bleastevearker.html">Blæste Værker</a>
+            <a href="stoebtevearker.html">Støbte Værker</a>
+            <a href="fremstilling.html">Fremstilling</a>
+            <a href="relieffer.html">Relieffer</a>
+            <a href="installationer.html">Installationer</a>
+        </div>
+        <a href="vearksted.html">Værkstedet</a>
+        <a href="cv.html">CV</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+
+    <div id="openbtn" class="openbtn hide">
+        <span onclick="openNav()">&#9776;</span>
+    </div>
+
+    <nav>
+        <ul>
+
+            <li><a href="index.html">Forside</a></li>
+            <li class="dropdown"><a href="vearker.html">Værker</a>
+                <div class="dropdown-content">
+                    <a href="bleastevearker.html" class="active">Blæste Værker</a>
+                    <a href="stoebtevearker.html">Støbte Værker</a>
+                    <a href="fremstilling.html">Fremstilling</a>
+                    <a href="relieffer.html">Relieffer</a>
+                    <a href="installationer.html">Installationer</a>
+                </div>
+            </li>
+            <li><a href="vearksted.html">Værkstedet</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<body>
+
+    <h4>BLÆSTE VÆRKER</h4>
+
+    <main class="indhold"></main>
+    <template>
+        <sektion class="ting">
+            <h1></h1>
+            <img src="" alt="">
+            <p></p>
+        </sektion>
+
+    </template>
+
+    <script>
+        let indhold;
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            async function getJson() {
+                let url = "http://carolinemalmgren.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/blaest_vaerk"
+                let jsonData = await fetch(url);
+                indhold = await jsonData.json();
+
+
+                visContent();
+            }
+
+            function visContent() {
+
+                let dest = document.querySelector(".indhold");
+                let temp = document.querySelector("template");
+
+                indhold.forEach(eachVeark => {
+                    let klon = temp.cloneNode(true).content;
+                    klon.querySelector("h1").textContent = eachVeark.title.rendered;
+                    klon.querySelector("img").src = eachVeark.billede.guid;
+                    klon.querySelector("p").textContent = "Pris: " + eachVeark.pris;
+                    dest.appendChild(klon);
+                    dest.lastElementChild.addEventListener("click", åbn);
+
+                    function åbn() {
+                        console.log(åbn);
+                        let klon = temp.cloneNode(true).content;
+                        klon.querySelector("img").src = eachVeark.billede.guid;
+                        dest.appendChild(klon);
+                        document.querySelector("#popup").style.display = "block";
+                    }
+
+                    //                    document.querySelector("#luk button").addEventListener("click", () => {
+                    //                        document.querySelector("#popup").style.display = "none";
+                    //                    })
+
+                    document.querySelector(".instagram").addEventListener("click", link);
+
+                    function link() {
+                        console.log(link);
+                        location.href = "https://www.instagram.com/lene.bodker/";
+
+                    }
+
+                })
+
+            }
+            getJson();
+
+        }
+    </script>
+
+    <script src="javascript.js"></script>
+
+    <section_ni>
+
+        <form action="/action_page.php">
+            <div class="container">
+                <h2>Abonner på vores nyhedsbrev</h2>
+
+            </div>
+
+            <div class="container" style="background-color:white">
+                <input type="text" placeholder="Navn" name="Navn" required>
+                <input type="text" placeholder="Email address" name="mail" required>
+            </div>
+
+            <div class="container">
+                <input type="submit" value="Abonner">
+            </div>
+        </form>
+    </section_ni>
+
+    <footer>
+
+        <h1>LENE BØDKER</h1> <br><br>
+        <p>
+            Gasværket <br>
+            Vindeboder 1 DK 4000 <br>
+            Roskilde Danmark <br> <br>
+            +45 20 84 17 22 <br> <br>
+            Mail@lenebodker.dk
+        </p>
+        <div class="somecon">
+
+            <div class="some">
+
+                <img src="fa.jpg" alt="facebook logo" class="facebook">
+                <img src="ig.jpg" alt="instagram logo" class="instagram">
+                <img src="yt.jpg" alt="youtube logo" class="youtube">
+
+            </div>
+
+
+        </div>
+
+    </footer>
+</body></html>
