@@ -10,11 +10,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <header>
-    <img src="logo-lene.svg" alt="logo" class="logo">
+    <a href="index.html"><img src="logo-lene.svg" alt="logo" class="logo"></a>
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -96,51 +96,49 @@
 
 
     </section_fire>
+    <div data-aos="fade-up" data-aos-duration="10000">
 
-    <section_to>
+        <section_to>
 
-        <h1>KUNSTGALLERI</h1>
-
-
-        <figure class="billede5">
-
-            <iframe height="350px" width="100%" allowfullscreen="true" src="https://momento360.com/e/u/8c9c1c454d0644c3a55bf94f563585a7?utm_campaign=embed&utm_source=other&utm_medium=other&heading=0&pitch=0&field-of-view=75"> </iframe>
-
-        </figure>
-        <figure class="billede5">
-
-            <iframe height="350px" width="100%" allowfullscreen="true" src="https://momento360.com/e/u/5ed6f0ffb18742e68d8e7995d4192a48?utm_campaign=embed&utm_source=other&utm_medium=other&heading=58.6&pitch=0&field-of-view=75"> </iframe>
-
-        </figure>
+            <h1>KUNSTGALLERI</h1>
 
 
-    </section_to>
+            <figure class="billede5">
 
-    <section_tre>
+                <iframe height="350px" width="100%" allowfullscreen="true" src="https://momento360.com/e/u/8c9c1c454d0644c3a55bf94f563585a7?utm_campaign=embed&utm_source=other&utm_medium=other&heading=0&pitch=0&field-of-view=75"> </iframe>
 
-        <h1>VIDEOGALLERI</h1>
+            </figure>
+            <figure class="billede5">
 
-        <div>
-            <video width="100%" height="500" controls class="videogalleri" poster="yo-100.jpg">
-                <source src="f%C3%A6rdig.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+                <iframe height="350px" width="100%" allowfullscreen="true" src="https://momento360.com/e/u/5ed6f0ffb18742e68d8e7995d4192a48?utm_campaign=embed&utm_source=other&utm_medium=other&heading=58.6&pitch=0&field-of-view=75"> </iframe>
 
-    </section_tre>
-    <section_femten>
-        <div>
-            <video width="100%" height="500" controls class="videogalleri" poster="SoMe-100.jpg">
-                <source src="SoMe-lene.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+            </figure>
 
-    </section_femten>
+
+        </section_to>
+    </div>
+    <div data-aos="fade-left" data-aos-duration="2000" data-aos-once="false">
+        <section_tre>
+
+            <h1>VIDEOGALLERI</h1>
+            <iframe width="70%" height="500" class="videogalleri" src="https://www.youtube.com/embed/FeI4fMOztr0?fbclid=IwAR1qUwyLcnyqrCYe2SRG8_WbPCDew_RPQINi-8xepQzI6lbNZDHthKsxRJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </section_tre>
+    </div>
+    <div data-aos="fade-right" data-aos-duration="2000" data-aos-once="false">
+        <section_tre>
+            <iframe width="70%" height="500" class="videogalleri" src="https://www.youtube.com/embed/GCRAMxEMBV0?fbclid=IwAR0lqxP_F951QFD0TV1Ku49DsxAsdM2HqN-XsH7q6k4OB63SHlh15xIjI2o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </section_tre>
+    </div>
 
 
 
     <script src="javascript.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <section_ni>
 
         <form action="/action_page.php">
@@ -159,6 +157,7 @@
             </div>
         </form>
     </section_ni>
+
     <footer>
 
         <h1>LENE BØDKER</h1> <br><br>

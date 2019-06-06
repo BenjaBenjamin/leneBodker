@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lene Bødker</title>
+    <script src="https://scripts.sirv.com/sirv.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+
+
+    <main class="single">
+        <button class="knap">&#10006;</button>
+        <article class="singleh1">
+            <h1></h1>
+            <p class="pris"></p>
+        </article>
+        <img src="" alt="skulpturer">
+        <p>Den oprindelige "Lorem ipsum" fyldtekst tager udgangspunkt i Cicero's latinske tekst "De finibus bonorum et malorum, som begynder således: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... <br> <br> Den oprindelige "Lorem ipsum" fyldtekst tager udgangspunkt i Cicero's latinske tekst "De finibus bonorum et malorum, som begynder således: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... <br> <br> Den oprindelige "Lorem ipsum" fyldtekst tager udgangspunkt i Cicero's latinske tekst "De finibus bonorum et malorum, som begynder således: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+
+
+    </main>
+
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        let id = urlParams.get("id");
+        let single;
+
+        document.addEventListener("DOMContentLoaded", getJson);
+
+
+
+        async function getJson() {
+            let url = "http://carolinemalmgren.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/stobt_vaerk/" + id;
+            console.log("id");
+
+            let jsonData = await fetch(url);
+            single = await jsonData.json();
+            console.log(single);
+            visContent();
+
+        }
+
+        function visContent() {
+            document.querySelector("h1").textContent = single.title.rendered;
+            document.querySelector("img").src = single.billede.guid;
+            document.querySelector(".pris").textContent = "Pris: " + single.pris + " DKK";
+
+        }
+
+        document.querySelector(".knap").addEventListener("click", link);
+
+        function link() {
+            console.log(link);
+            location.href = "vearker.html";
+
+        }
+    </script>
+
+
+</body></html>

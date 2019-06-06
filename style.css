@@ -14,6 +14,121 @@ body {
     outline: none;
 }
 
+.knap {
+    position: absolute;
+    height: 5vw;
+    width: 5vw;
+    right: 5vw;
+    background-color: #e9e5e2;
+    font-size: 2.5rem;
+    color: ;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.filter {
+    position: absolute;
+    height: 3.5vw;
+    width: 6vw;
+    margin-left: 5vw;
+    font-family: "BebasNeue-Regular", normal, serif;
+    font-size: 1rem;
+    margin-top: 2vw;
+    background-color: #b9b5b2;
+    color: white;
+    padding: 3px;
+    letter-spacing: 0.5px;
+
+}
+
+.filter2 {
+    position: absolute;
+    height: 3.5vw;
+    width: 6vw;
+    margin-left: 12vw;
+    font-family: "BebasNeue-Regular", normal, serif;
+    font-size: 1rem;
+    margin-top: 2vw;
+    background-color: #76736f;
+    color: white;
+    padding: 3px;
+    letter-spacing: 0.5px;
+}
+
+.filter3 {
+    position: absolute;
+    height: 3.5vw;
+    width: 6vw;
+    margin-left: 19vw;
+    font-family: "BebasNeue-Regular", normal, serif;
+    font-size: 1rem;
+    margin-top: 2vw;
+    background-color: #6c6961;
+    color: white;
+    padding: 3px;
+    letter-spacing: 0.5px;
+}
+
+.filter4 {
+    position: absolute;
+    height: 3.5vw;
+    width: 6vw;
+    margin-left: 26vw;
+    font-family: "BebasNeue-Regular", normal, serif;
+    font-size: 1rem;
+    margin-top: 2vw;
+    background-color: #4c4843;
+    color: white;
+    padding: 3px;
+    letter-spacing: 0.5px;
+}
+
+.single img {
+    width: 40vw;
+    margin: 5vw;
+    height: 40vw;
+}
+
+.singleh1 {
+    position: absolute;
+    margin-left: 5vw;
+    font-size: 2rem;
+}
+
+.single {
+    width: 100%;
+    height: 100%;
+    background-color: #b9b5b2;
+    padding-top: 5vw;
+    overflow-y: hidden;
+}
+
+.single p {
+    margin-top: 10vw;
+    margin-right: 2vw;
+    column-count: 2;
+    column-gap: 35px;
+}
+
+.singlereli img {
+    width: 40%;
+    margin: 5vw;
+    height: 40vw;
+}
+
+.singlereli {
+    width: 100%;
+    height: 100%;
+    background-color: #DBDBDB;
+    padding-top: 5vw;
+}
+
+.singlereli p {
+    margin: auto;
+    margin-right: 2vw;
+}
+
+
 .logo {
     height: 4vw;
     width: 10vw;
@@ -30,7 +145,7 @@ section_single {
 
 /*NEWSLETTER*/
 form {
-    margin-top: 2vw;
+
     border: 3px solid #f1f1f1;
     font-family: Arial;
 }
@@ -43,6 +158,7 @@ form {
 
 .container h2 {
     text-align: center;
+    margin-top: 5vw;
 }
 
 input[type=text],
@@ -62,7 +178,7 @@ input[type=checkbox] {
 }
 
 input[type=submit] {
-    background-color: #294a99;
+    background-color: #6c6961;
     color: white;
     border: none;
     margin-top:
@@ -72,52 +188,32 @@ input[type=submit]:hover {
     opacity: 0.8;
 }
 
-/*POPUP*/
-.pop {
-    background-color: #FF7BAC;
-    width: 50vw;
-    height: 65vh;
-    border: #A7E3F5 solid 10px;
-    border-radius: 25px;
-    margin-left: 23vw;
-
-}
-
-.pop h2 {
-    font-size: 2rem;
-    border: none;
-}
-
-.pop p {
-    color: whitesmoke;
-    font-size: 2rem;
-}
-
-#popup {
-    position: fixed;
-    text-align: center;
-    z-index: 100;
-    bottom: 2vw;
-}
-
-#luk button {
-    width: 2vw;
-    height: 2vw;
-    margin-left: 23vw;
-    color: #A7E3F5;
-    background-color: #FF7BAC;
-    margin-bottom: 1vw;
-
-}
 
 .overskrift h1 {}
 
-.Sirv {
-    border: solid;
+.pris {
+    font-size: 3rem;
+    font-family: "BebasNeue-Light", normal, serif;
+    letter-spacing: 3px;
+    padding-top: 20vw;
+    padding-left: 45vw;
+    width: 100vw;
 }
+
+.pris1 {
+    font-size: 3rem;
+    font-family: "BebasNeue-Light", normal, serif;
+    letter-spacing: 3px;
+    padding-top: 35vw;
+    padding-left: 35vw;
+    width: 100vw;
+}
+
+.Sirv {}
 
 .Sirv img {
     height: 40vw;
+    width: 1vw;
 }
 
 section_syv h1 {
@@ -267,6 +363,7 @@ section_fjorten {
 }
 
 .værksted {
+    margin-top: 25vw;
     margin-left: 5vw;
 }
 
@@ -281,13 +378,15 @@ section_fjorten {
     flex-basis: 700px;
     margin-top: 15vw;
     text-align: center;
+    margin: auto;
 }
 
 .billede5 img {}
 
 .videogalleri {
     margin-top: 15vw;
-    width: 100%;
+    width: 70%;
+    margin: auto;
 
 }
 
@@ -313,14 +412,14 @@ h4 {
 }
 
 .ting {
-    border-right: solid;
-    margin-top: 3vw;
+    border-right: solid 1px grey;
+    margin-top: 10vw;
 }
 
 .ting p {
     font-family: "BebasNeue-Light", normal, serif;
     font-weight: 10;
-    letter-spacing: 10px;
+    letter-spacing: 2px;
 }
 
 .indhold img:hover {
@@ -329,8 +428,6 @@ h4 {
 
 .indhold p {
     font-size: 1.5rem;
-    position: relative;
-    right: 7vw;
 }
 
 .indhold h1 {
@@ -380,7 +477,7 @@ h4 {
     position: absolute;
     display: flex;
     background-color: rgba(0, 0, 0, 0.56);
-    height: 102%;
+    height: 102.2%;
     width: 100%;
     justify-content: ;
     align-items: center;
@@ -606,7 +703,7 @@ section_tre img {
 }
 
 section_tre h1 {
-    margin-top: 10vw;
+    margin-top: 5vw;
     position: absolute;
     width: 100%;
     text-align: center;
@@ -630,7 +727,8 @@ section_tre p {
 
 a,
 p {
-    font-family: "Shree Devanagari 714", italic, serif;
+    /*    font-family: "Shree Devanagari 714", italic, serif;*/
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -717,6 +815,7 @@ li.dropdown {
     cursor: pointer;
     outline: none;
     padding: 15px;
+    text-transform: uppercase;
 }
 
 /* On mouse-over */
@@ -753,6 +852,7 @@ li.dropdown {
     color: black;
     display: block;
     transition: 0.3s;
+    text-transform: uppercase;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -811,8 +911,7 @@ nav li a:hover:not(.active) {
 
 nav li {
     display: inline-block;
-    padding: 5px 5px;
-
+    padding-top: 5px;
 }
 
 nav ul {
@@ -828,7 +927,6 @@ nav ul {
 
 nav ul li {
     padding-left: 10px;
-    text-decoration: underline;
 }
 
 nav ul li:last-child {
@@ -844,7 +942,10 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.rem;
     letter-spacing: 1px;
+    font-weight: 100;
+    text-transform: uppercase;
 }
+
 
 nav ul li a:hover {
     background-color: #e9e5e2;
@@ -873,6 +974,13 @@ nav ul li a:hover {
 
 @media screen and (min-width: 800px) {
 
+    .single {
+        display: flex;
+    }
+
+    .singlereli {
+        display: flex;
+    }
 
     section_to {
         display: flex;
@@ -925,6 +1033,46 @@ nav ul li a:hover {
 
 /*Større skærm*/
 @media screen and (max-width: 1400px) {
+
+    .filter {
+        height: 4vw;
+        width: 7vw;
+        margin-left: 3vw;
+    }
+
+    .filter2 {
+        height: 4vw;
+        width: 7vw;
+        margin-left: 12vw;
+    }
+
+    .filter3 {
+        height: 4vw;
+        width: 7vw;
+        margin-left: 21vw;
+    }
+
+    .filter4 {
+        height: 4vw;
+        width: 7vw;
+        margin-left: 30vw;
+    }
+
+
+    .Sirv img {
+        height: 50vw;
+    }
+
+    .Sirv {
+        padding: 30px;
+    }
+
+    .logo {
+        width: 12vw;
+        height: 6vw;
+
+    }
+
     .titel {
         width: 100%;
         height: 56.5vw;
@@ -946,517 +1094,743 @@ nav ul li a:hover {
         grid-template-columns: 1fr 1fr;
     }
 
-}
 
-
-/*Tablet*/
-@media screen and (max-width: 800px) {
-
-    .logo {
-        width: 30vw;
-        height: 8vw;
-    }
-
-    .billede6 {
-        padding: 0;
-    }
-
-    .billede6 img {
-        padding: 25px;
-    }
-
-    section_syv p {
-        text-align: center;
-        padding: 0;
-        padding-top: 5vw;
-        height: 100vw;
-    }
-
-    section_otte p {
-        text-align: center;
-        padding: 0;
-        padding-top: 5vw;
-        height: 70vw;
-    }
-
-    section_elleve p {
-        text-align: center;
-        padding: 0;
-        padding-top: 5vw;
-        height: 70vw;
-    }
-
-    section_tolv p {
-        text-align: center;
-        padding: 0;
-        padding-top: 5vw;
-        height: 100vw;
-    }
-
-    section_tretten p {
-        text-align: center;
-        padding: 0;
-        padding-top: 5vw;
-        height: 105vw;
-    }
-
-    section_fjorten p {
-        text-align: center;
-        padding: 0;
-        padding-top: 5vw;
-    }
-
-    .videogalleri {
-        padding-top: 15vw;
-        margin-top: 15vw;
-        width: 100%;
-
-    }
-
-    .billede {
-        width: 100%;
-    }
-
-    .billede4 {
-        margin: auto;
-        padding-top: 5vw;
-    }
-
-    .billede5 {
-        margin: auto;
-        padding-bottom: 10vw;
-        padding-top: 15vw;
-    }
-
-    .ting:nth-child(2) {
-        border: none;
-    }
-
-    .ting:nth-child(4) {
-        border: none;
-    }
-
-    .ting:nth-child(6) {
-        border: none;
-    }
-
-    .ting:nth-child(8) {
-        border: none;
-    }
-
-
-    section_ni p {
-        width: 100%;
-        height: 100vh;
-        background-color: #DBDBDB;
-    }
-
-    section_ni h1 {
-        background-color: #DBDBDB;
-        margin-top: 0;
-    }
-
-
-
-    section_to {
-        height: 130vh;
-    }
-
-    section_to h1 {}
-
-    section_fire {
-        height: 250vh;
-    }
-
-    section_ti {
-        height: 250vh;
-    }
-
-    section_tre {
-        height: 130vh;
-    }
-
-    #my_video {
-        width: 100%;
-        height: 80vw;
-    }
-
-    #hero {
-        height: 80vw;
-    }
-
-    .titel {
-        width: 100%;
-        height: 68vw;
-    }
-
-    .titel h2 {
-        font-size: 2.5rem;
-        width: 80%;
-        margin-left: 4vw;
-    }
-
-    .openbtn {
-        position: fixed;
-        top: 25vw;
-        right: 5vw;
-        /*        display: block;*/
-        visibility: visible;
-        /*        background-color: white;*/
-        width: 15vw;
-        height: 15vw;
-        border-radius: 50%;
-        text-align: center;
-
-    }
-
-    .sidenav {
-        visibility: visible;
-        z-index: 2;
-    }
-
-    .sidenav a {
-        font-size: 25px;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .dropdown-btn {
-        font-size: 25px;
-    }
-
-    section_to img {
-        margin-top: 15vw;
-    }
-
-    section_fire img {
-        margin-top: 15vw;
-    }
-
-    section_ti img {
-        margin-top: 15vw;
-    }
-
-    .billede1 img {}
-
-    .billede2 {
-        padding: 0;
-        padding-top: 20vw;
-        width: 100%;
-    }
-
-    .snapwidget-widget {}
-
-    .overskrift h1 {
-        padding-top: 5vw;
-        width: 100vw;
-        text-align: center;
-    }
-
-    section_to h1 {
-        margin: auto;
-    }
-
-    section_to p {
-        padding: 0;
-        padding-right: 5vw;
-        padding-left: 5vw;
-
-    }
-
-    section_fire p {
-        padding: 0;
-        padding-right: 5vw;
-        padding-left: 5vw;
-
-    }
-
-    section_ti h1 {
-        margin: auto;
-    }
-
-    section_fire h1 {
-        margin: auto;
-    }
-
-    section_ti p {
-        padding: 0;
-        padding-right: 5vw;
-        padding-left: 5vw;
-
-    }
-
-    section_tre img {
-        margin-top: 15vw;
-    }
-
-    section_tre h1 {
-        margin: auto;
-    }
-
-    section_tre p {
-        padding: 0;
-        padding-right: 5vw;
-        padding-left: 5vw;
-
-    }
-
-    .some img {
-        margin-left: 7vw;
-    }
-
-    .Sirv img {
-        height: 80vw;
-    }
-
-}
-
-/*Mobil*/
-@media screen and (max-width: 500px) {
-
-    .billede6 {
-        margin: 0;
-        padding: 0;
-    }
-
-    .billede6 img {
-        width: 100%;
-    }
-
-    .logo {
-        width: 40vw;
-        height: 10vw;
-    }
-
-    section_syv p {
-        text-align: center;
-        padding: 0;
-        padding-top: 5vw;
-        height: 290vw;
-    }
-
-    section_otte p {
-        text-align: center;
-        padding: 0;
-        padding-top: 5vw;
-        height: 130vw;
-    }
-
-    section_elleve p {
-        text-align: center;
-        padding: 0;
-        padding-top: 5vw;
-        height: 170vw;
-    }
-
-    section_tolv p {
-        text-align: center;
-        padding: 0;
-        padding-top: 5vw;
-        height: 220vw;
-    }
-
-    section_tretten p {
-        text-align: center;
-        padding: 0;
-        padding-top: 5vw;
-        height: 260vw;
-    }
-
-    section_fjorten p {
-        text-align: center;
-        padding: 0;
-        padding-top: 5vw;
-        height: 220vw;
-    }
-
-    .Sirv img {
-        height: 80vw;
-    }
-
-
-    .ting {
-        border: none;
-    }
-
-
-    section_ni p {
-        height: 110vh;
-    }
-
-    .some img {
-        margin-left: 7vw;
-    }
-
-    .billede4 {
-        width: 100%;
-    }
-
-    .mobil {
-        height: 100vw;
-    }
-
-    .indhold {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    #my_video {
-        width: 100%;
-        height: 60vw;
-    }
-
-    #hero {
-        height: 60vw;
-    }
-
-    .titel {
-        width: 100%;
-        height: 58vw;
-    }
-
-    .titel h2 {
-        font-size: 1.5rem;
-        width: 80%;
-        margin-left: 2vw;
-    }
-
-    section_to {
-        text-align: center;
-        flex: none;
-        height: 220vw;
-        width: 100%;
-    }
-
-
-
-    section_to img {
-        margin-top: 15vw;
-    }
-
-    section_fire {
-        text-align: center;
-        flex: none;
-        height: 300vw;
-        width: 100%;
-    }
-
-
-
-    section_fire img {
-        margin-top: 15vw;
-    }
-
-    .billede1 img {
-        width: 100%;
-    }
-
-    .billede1 {
-        margin-top: 5vw;
-        padding: 0;
-        padding-top: 15vw;
-    }
-
-    .billede2 {
-        padding: 0;
-        padding-top: 20vw;
-        width: 100%;
-    }
-
-    .snapwidget-widget {}
-
-    .overskrift h1 {
-        right: 30vw;
-        top: 10vw;
-    }
-
-    .overskrift1 h1 {
-        top: 10vw;
-        left: 2vw;
-    }
-
-    section_to h1 {
-        margin: auto;
-    }
-
-    section_to {
-        height: 170vh;
-    }
-
-    section_to p {
-        padding: 0;
-        padding-right: 5vw;
-        padding-left: 5vw;
-
-    }
-
-    section_fire h1 {
-        padding-top: 8vw;
-        margin-left: 5vw;
-    }
-
-
-    section_fire p {
-        padding: 0;
-        padding-right: 5vw;
-        padding-left: 5vw;
-
-    }
-
-    section_tre {
-        text-align: center;
-        flex: none;
-        height: 250vw;
-        margin-top:
-    }
-
-    section_tre img {
-        margin-top: 15vw;
-    }
-
-    section_tre h1 {}
-
-    section_tre p {
-        padding: 0;
-        padding-right: 5vw;
-        padding-left: 5vw;
-
-    }
-
-    .panorama {
-        height: 20vw;
-        width: 20vw;
-    }
-
-    .openbtn {
-        position: fixed;
-        top: 25vw;
-        right: 5vw;
-        /*        display: block;*/
-        visibility: visible;
-        /*        background-color: white;*/
-        width: 15vw;
-        height: 15vw;
-        border-radius: 50%;
-        text-align: center;
-    }
-
-    .sidenav {
-        visibility: visible;
-        z-index: 2;
-    }
-
-    .sidenav a {
-        font-size: 25px;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .dropdown-btn {
-        font-size: 25px;
+    /*Tablet*/
+    @media screen and (max-width: 800px) {
+
+        .pris {
+            padding-left: 2vw;
+            padding-top: 95vw;
+        }
+
+        .filter {
+            height: 7vw;
+            width: 11vw;
+            margin-left: 6vw;
+        }
+
+        .filter2 {
+            height: 7vw;
+            width: 11vw;
+            margin-left: 19vw;
+        }
+
+        .filter3 {
+            height: 7vw;
+            width: 11vw;
+            margin-left: 32vw;
+        }
+
+        .filter4 {
+            height: 7vw;
+            width: 11vw;
+            margin-left: 45vw;
+        }
+
+        .knap {
+            top: 5vw;
+            font-size: 1.5rem;
+            height: 8vw;
+            width: 8vw;
+        }
+
+        .mapouter {
+            position: relative;
+            height: 100%;
+
+
+        }
+
+        .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+
+        .single {
+            height: 200vw;
+            padding-top: 15vw;
+        }
+
+        .single p {
+            margin-left: 5vw;
+            margin-top: 0vw;
+        }
+
+        .single img {
+            width: 100%;
+            margin: 0;
+            padding: 100px;
+            height: 100vw;
+        }
+
+        .singlereli {
+            height: 100%;
+            padding-top: 15vw;
+        }
+
+        .singleh1 {
+            top: 5vw;
+        }
+
+        .singlereli p {
+            margin-left: 5vw;
+        }
+
+        .singlereli img {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            height: 70%;
+
+        }
+
+        .pris1 {
+            padding-left: 40vw;
+            padding-top: 75vw;
+        }
+
+        .logo {
+            width: 25vw;
+            height: 20vw;
+            margin-top: -5vw;
+            margin-left: 2vw;
+        }
+
+        .billede6 {
+            padding: 0;
+        }
+
+        .billede6 img {
+            padding: 25px;
+        }
+
+        section_syv p {
+            text-align: center;
+            padding: 0;
+            padding-top: 5vw;
+            height: 100vw;
+        }
+
+        section_otte p {
+            text-align: center;
+            padding: 0;
+            padding-top: 5vw;
+            height: 70vw;
+        }
+
+        section_elleve p {
+            text-align: center;
+            padding: 0;
+            padding-top: 5vw;
+            height: 70vw;
+        }
+
+        section_tolv p {
+            text-align: center;
+            padding: 0;
+            padding-top: 5vw;
+            height: 100vw;
+        }
+
+        section_tretten p {
+            text-align: center;
+            padding: 0;
+            padding-top: 5vw;
+            height: 105vw;
+        }
+
+        section_fjorten p {
+            text-align: center;
+            padding: 0;
+            padding-top: 5vw;
+        }
+
+        .videogalleri {
+            padding-top: 15vw;
+            margin-top: 15vw;
+            width: 100%;
+
+        }
+
+        .billede {
+            width: 100%;
+        }
+
+        .billede4 {
+            padding-top: 5vw;
+            width: 70%;
+            margin: 0;
+            margin: auto;
+            padding-left: 5vw;
+
+        }
+
+        .billede5 {
+            padding-top: 15vw;
+            width: 70%;
+            margin: 0;
+            margin: auto;
+            padding-left: 5vw;
+            padding-bottom: 10vw;
+        }
+
+        .ting:nth-child(2) {
+            border: none;
+        }
+
+        .ting:nth-child(4) {
+            border: none;
+        }
+
+        .ting:nth-child(6) {
+            border: none;
+        }
+
+        .ting:nth-child(8) {
+            border: none;
+        }
+
+
+        section_ni p {
+            width: 100%;
+            height: 100vh;
+            background-color: #DBDBDB;
+        }
+
+        section_ni h1 {
+            background-color: #DBDBDB;
+            margin-top: 0;
+        }
+
+
+
+        section_to {
+            height: 130vh;
+        }
+
+        section_to h1 {}
+
+        section_fire {
+            height: 250vh;
+        }
+
+        section_ti {
+            height: 250vh;
+        }
+
+        section_tre {
+            height: 130vh;
+        }
+
+        #my_video {
+            width: 100%;
+            height: 80vw;
+        }
+
+        #hero {
+            height: 80vw;
+        }
+
+        .titel {
+            width: 100%;
+            height: 68vw;
+        }
+
+        .titel h2 {
+            font-size: 2.5rem;
+            width: 80%;
+            margin-left: 4vw;
+        }
+
+        .openbtn {
+            position: fixed;
+            top: 25vw;
+            right: 5vw;
+            /*        display: block;*/
+            visibility: visible;
+            /*        background-color: white;*/
+            width: 15vw;
+            height: 15vw;
+            border-radius: 50%;
+            text-align: center;
+
+        }
+
+        .sidenav {
+            visibility: visible;
+            z-index: 2;
+        }
+
+        .sidenav a {
+            font-size: 25px;
+        }
+
+        nav {
+            display: none;
+        }
+
+        .dropdown-btn {
+            font-size: 25px;
+        }
+
+        section_to img {
+            margin-top: 15vw;
+        }
+
+        section_fire img {
+            margin-top: 15vw;
+        }
+
+        section_ti img {
+            margin-top: 15vw;
+        }
+
+        .billede1 img {
+            margin: auto;
+            width: 70%;
+            height: 70%;
+            padding-top: 5vw;
+        }
+
+        .billede1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .billede2 {
+            padding: 0;
+            padding-top: 10vw;
+            width: 80%;
+            margin: auto;
+            padding-bottom: 5vw;
+        }
+
+        .snapwidget-widget {}
+
+        .overskrift h1 {
+            padding-top: 5vw;
+            width: 100vw;
+            text-align: center;
+        }
+
+        section_to h1 {
+            margin: auto;
+        }
+
+        section_to p {
+            padding: 0;
+            padding-right: 5vw;
+            padding-left: 5vw;
+
+        }
+
+        section_fire p {
+            padding: 0;
+            padding-right: 5vw;
+            padding-left: 5vw;
+
+        }
+
+        section_ti h1 {
+            margin: auto;
+        }
+
+        section_fire h1 {}
+
+
+        section_ti p {
+            padding: 0;
+            padding-right: 5vw;
+            padding-left: 5vw;
+
+        }
+
+        section_tre img {
+            margin-top: 15vw;
+        }
+
+        section_tre h1 {
+            margin-top: -10vw;
+        }
+
+        section_tre p {
+            padding: 0;
+            padding-right: 5vw;
+            padding-left: 5vw;
+
+        }
+
+        .some img {
+            margin-left: 7vw;
+        }
+
+        .Sirv img {
+            height: 80vw;
+        }
+
+    }
+
+    /*Mobil*/
+    @media screen and (max-width: 500px) {
+
+        h4 {
+            margin-top: 10vw;
+        }
+
+        .pris1 {
+            padding-top: 130vw;
+            width: 100vw;
+            height: 100vw;
+            padding-left: 0;
+
+        }
+
+        .pris {
+            padding-top: 85vw;
+            width: 50vw;
+            height: 100vw;
+        }
+
+        .singlereli img {
+            width: 100%;
+            height: 40%;
+            margin-bottom: 15vw;
+
+        }
+
+        .singlereli {
+            height: 200%;
+        }
+
+        .single img {
+            width: 100%;
+            margin: 0;
+            padding: 50px;
+            height: 100vw;
+        }
+
+
+        .filter {
+            height: 12vw;
+            width: 20vw;
+            margin-left: 3vw;
+        }
+
+        .filter2 {
+            height: 12vw;
+            width: 20vw;
+            margin-left: 28vw;
+        }
+
+        .filter3 {
+            height: 12vw;
+            width: 20vw;
+            margin-left: 54vw;
+        }
+
+        .filter4 {
+            height: 12vw;
+            width: 20vw;
+            margin-left: 79vw;
+        }
+
+        .Sirv {
+            padding: 70px;
+        }
+
+        .knap {
+            top: 5vw;
+            font-size: 1.5rem;
+            width: 8vw;
+            height: 8vw;
+        }
+
+        .værksted {}
+
+        .mapouter {
+            margin: auto;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+
+        }
+
+        .gmap_canvas {
+            overflow-x: hidden;
+            background: none !important;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            margin: 0;
+            display: none;
+        }
+
+
+
+        .indhold img {
+            width: 80%;
+            padding: 5vw;
+        }
+
+        .single {
+            height: 250vw;
+        }
+
+        .billede6 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .billede6 img {
+            width: 100%;
+        }
+
+        .logo {
+            width: 30vw;
+            height: 20vw;
+            margin-top: -5vw;
+            margin-left: 2vw;
+        }
+
+        section_syv p {
+            text-align: center;
+            padding: 0;
+            padding-top: 5vw;
+            height: 290vw;
+        }
+
+        section_otte p {
+            text-align: center;
+            padding: 0;
+            padding-top: 5vw;
+            height: 130vw;
+        }
+
+        section_elleve p {
+            text-align: center;
+            padding: 0;
+            padding-top: 5vw;
+            height: 170vw;
+        }
+
+        section_tolv p {
+            text-align: center;
+            padding: 0;
+            padding-top: 5vw;
+            height: 220vw;
+        }
+
+        section_tretten p {
+            text-align: center;
+            padding: 0;
+            padding-top: 5vw;
+            height: 260vw;
+        }
+
+        section_fjorten p {
+            text-align: center;
+            padding: 0;
+            padding-top: 5vw;
+            height: 220vw;
+        }
+
+        .Sirv img {
+            height: 80vw;
+        }
+
+
+        .ting {
+            border: none;
+        }
+
+
+        section_ni p {
+            height: 110vh;
+        }
+
+        .some img {
+            margin-left: 7vw;
+        }
+
+        .billede4 {
+            width: 80%;
+        }
+
+        .billede5 {
+            width: 80%;
+        }
+
+        .mobil {
+            height: 100vw;
+        }
+
+        .indhold {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        #my_video {
+            width: 100%;
+            height: 60vw;
+        }
+
+        #hero {
+            height: 60vw;
+        }
+
+        .titel {
+            width: 100%;
+            height: 58vw;
+        }
+
+        .titel h2 {
+            font-size: 1.5rem;
+            width: 80%;
+            margin-left: 2vw;
+        }
+
+        section_to {
+            text-align: center;
+            flex: none;
+            height: 220vw;
+            width: 100%;
+        }
+
+
+
+        section_to img {
+            margin-top: 15vw;
+        }
+
+        section_fire {
+            text-align: center;
+            flex: none;
+            height: 300vw;
+            width: 100%;
+        }
+
+
+
+        section_fire img {
+            margin-top: 15vw;
+        }
+
+        .billede1 img {
+            width: 100%;
+        }
+
+        .billede1 {
+            margin-top: 5vw;
+            padding: 0;
+            padding-top: 15vw;
+        }
+
+        .billede2 {
+            padding: 0;
+            padding-top: 10vw;
+            padding-bottom: 5vw;
+            width: 80%;
+            margin: auto;
+        }
+
+        .snapwidget-widget {}
+
+        .overskrift h1 {
+            right: 30vw;
+            top: 10vw;
+        }
+
+        .overskrift1 h1 {
+            top: 10vw;
+            left: 2vw;
+        }
+
+        section_to h1 {
+            margin: auto;
+        }
+
+        section_to {
+            height: 170vh;
+        }
+
+        section_to p {
+            padding: 0;
+            padding-right: 5vw;
+            padding-left: 5vw;
+
+        }
+
+        section_fire h1 {
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+        }
+
+
+        section_fire p {
+            padding: 0;
+            padding-right: 5vw;
+            padding-left: 5vw;
+
+        }
+
+        section_tre {
+            text-align: center;
+            flex: none;
+            height: 250vw;
+            margin-top:
+        }
+
+        section_tre img {
+            margin-top: 15vw;
+        }
+
+        section_tre h1 {
+            margin-top: -10vw;
+        }
+
+        section_tre p {
+            padding: 0;
+            padding-right: 5vw;
+            padding-left: 5vw;
+
+        }
+
+        .panorama {
+            height: 20vw;
+            width: 20vw;
+        }
+
+        .openbtn {
+            position: fixed;
+            top: 25vw;
+            right: 5vw;
+            /*        display: block;*/
+            visibility: visible;
+            /*        background-color: white;*/
+            width: 15vw;
+            height: 15vw;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .sidenav {
+            visibility: visible;
+            z-index: 2;
+        }
+
+        .sidenav a {
+            font-size: 25px;
+        }
+
+        nav {
+            display: none;
+        }
+
+        .dropdown-btn {
+            font-size: 25px;
+        }
     }
-}
